@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Xonics lab</title>
+</head>
+
+<body>
+    <h1><a href="/">Xonics@TJU</a></h1>
+    
+    <h2>Ubuntu</h2>
+    <h1>Ubuntu</h1>
+<h2>Git</h2>
+<h3>github ssh</h3>
+<h2>Python3</h2>
+<h3>virtualenv</h3>
+<h3>SublimeText3</h3>
+<h2>Markdown</h2>
+<p>下载安装包</p>
+<p>安装
+```
+sudo dpkg -i remarkable_1.87_all.deb</p>
+<p>```</p>
+<p>报错：</p>
+<p>```
+Unpacking remarkable (1.87) ...
+dpkg: dependency problems prevent configuration of remarkable:
+ remarkable depends on python3-bs4; however:
+  Package python3-bs4 is not installed.
+ remarkable depends on gir1.2-webkit-3.0; however:
+  Package gir1.2-webkit-3.0 is not installed.
+ remarkable depends on wkhtmltopdf; however:
+  Package wkhtmltopdf is not installed.</p>
+<p>dpkg: error processing package remarkable (--install):
+ dependency problems - leaving unconfigured
+Processing triggers for mime-support (3.60ubuntu1) ...
+Processing triggers for gnome-menus (3.13.3-6ubuntu5) ...
+Processing triggers for desktop-file-utils (0.23-1ubuntu3) ...
+Processing triggers for libglib2.0-0:amd64 (2.54.1-1ubuntu1) ...
+Processing triggers for hicolor-icon-theme (0.17-1) ...
+Errors were encountered while processing:
+ remarkable</p>
+<p>```
+没关系，补上依赖项：</p>
+<p>```
+sudo apt-get install -f </p>
+<p>```</p>
+<p>如果报错，缺少<code>gtkspellcheck</code></p>
+<p><code>sudo apt-get install python3-gtkspellcheck</code></p>
+
+</body>
+</html>
